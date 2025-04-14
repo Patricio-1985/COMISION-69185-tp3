@@ -1,0 +1,207 @@
+
+/*--------------INDEX HEADER - MEDIA QUERY -tablet ------------------*/
+
+@media (max-width:768px) {
+    header label{
+        display: block;
+    }
+
+    .menu{
+        position: absolute;
+        background-color: #4E94ab;
+        width: 70%;     
+        margin-left: -75%;
+        transition: all 0.5s;  
+        z-index: 200;
+
+        .menu ul{
+            flex-direction: column;
+
+            .ul-galeria{
+                flex-direction: none;
+
+                .menu li{
+                    border-top: 1px solid white;
+                }
+            
+            }
+        
+        }
+    }
+  
+    
+    #btn-menu:checked~ .menu{
+        margin: 0;
+    }   
+}
+
+/* 768*/
+/*--------------INDEX HEADER - MEDIA QUERY -tablet ------------------*/
+
+@media (max-width:768px) {
+    header label{
+        display: block;
+    }
+
+    .menu{
+        position: absolute;
+        background-color: #4E94ab;
+        width: 70%;     
+        margin-left: -75%;
+        transition: all 0.5s;  
+        z-index: 200;
+
+        .menu ul{
+            flex-direction: column;
+
+            .ul-galeria{
+                flex-direction: none;
+
+                .menu li{
+                    border-top: 1px solid white;
+                }
+            
+            }
+        
+        }
+    }
+  
+    
+    #btn-menu:checked~ .menu{
+        margin: 0;
+    }   
+}
+
+/* ---- GALERIA USANDO GRIDS (GALERIA) ------responsibe --------------*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 150px;
+    padding: 25px;
+    grid-gap: 10px;
+    background-color: black;
+
+    .grid-item:nth-child(4) {
+        grid-column-start: span 2;
+    }
+    
+    .grid-item:nth-child(5) {
+        grid-row-start: span 2;
+    }
+    
+    .grid-item:nth-child(12) {
+        grid-column-start: span 2;
+    }
+
+    .grid-item{
+        position: relative;
+
+        
+        a{   
+          .grid-imagen{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            }
+        }
+        
+        .titulo-imagen{
+            position: absolute;
+            bottom: 0;
+            color: white;
+            backdrop-filter: blur(15px);
+            margin: 0;
+            padding: 10px;
+        }    
+    }
+
+    }
+
+
+/*---------------media QUERYS ---TABLET ----------*/
+
+@media (min-width:760px){
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+
+        .grid-item:nth-child(3) {
+            grid-column-start: span 2;
+            grid-row-start: span 2;
+        }
+        
+        .grid-item:nth-child(4) {
+            grid-column-start: span 2;
+        }
+        
+        .grid-item:nth-child(11) {
+            grid-column-start: span 2;
+        }
+        
+        .grid-item:nth-child(6) {
+            grid-row-start: span 4;
+        }
+        .grid-item:nth-child(5) {
+            grid-column-start: span 3;
+        }
+        
+        .grid-item:nth-child(10) {
+            grid-row-start: span 2;
+        }
+        
+        }
+        
+}
+
+/*----------------------------QUERY DESKTOP--------------*/
+
+@media (min-width:900px){
+    .grid-container {
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 10px;
+        width: 90%;
+        margin: auto;
+
+        .grid-item:nth-child(3) {
+            grid-column-start: span 2;
+            grid-row-start: span 2;
+        }
+        
+        .grid-item:nth-child(1) {
+            grid-column-start: span 2;
+        }
+        
+        .grid-item:nth-child(7) {
+            grid-row-start: span 2;
+        }
+        
+        .grid-item:nth-child(2) {
+            grid-row-start: span 4;
+        }
+        
+        .grid-item:nth-child(5) {
+            grid-column-start: span 2;
+        }
+        
+        .grid-item:nth-child(6) {
+            grid-row-start: span 2;
+        }
+        }
+}
+
+
+
+/*---------------------media QUERY FOOTER ----*/
+
+@media (max-width:991px){
+    .footer-row{
+        text-align: center;
+
+        .footer-link {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+    }
+   
