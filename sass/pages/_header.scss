@@ -2,58 +2,102 @@
 @import "../utilidades/variables";
 
 .header{
-    background-color: $bg-principal;
-    color: $font-color;
-    font-weight: 100;
-    text-align: center;
-    padding: 20px;
-    width: 100%;
-       img{
-         border-radius: 0;
-       }
-       #btn-menu{
-         display:none;
+  background-color: $bg-principal;
+  color: $font-color;
+  font-weight: 100;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  margin: 0;
+  margin-left: 0;
+  
+     h1{
+      font-size: 350%;
      }
-     }  
-       header label{ 
-         display: none;
-         width: 70px;
-         height: 70px;
-         padding: 20px;
-         border-right: 1px solid white;
-         text-decoration: none ;
-         }
 
-       header label:hover{
-         cursor: pointer;
-         background: rgba(0,0,0,0.3);
-         }
-        
-    /*nav*/
-   
-       .menu ul{
-          margin:0;
-          padding:0;
-          list-style: none;
-          display: flex;
+     p{
+      font-size: 200%;
+     }
 
-            .menu ul li:hover{
-               background:rgba(0,0,0,05);}
-            
-            li{
-               text-align: center;
-               flex-grow: 1;
+     img{
+       border-radius: 0;
+     }
+     #btn-menu{
+       display:none;
+   }
+   }  
+     header label{ 
+       display: none;
+       width: 70px;
+       height: 70px;
+       padding: 20px;
+       border-right: 1px solid white;
+       text-decoration: none ;
+       }
 
-                 a{ display: block;
-                    padding: 15px 20px;
-                    color: white;
-                    text-decoration: none;
-                  }
-               }
-           }
+     header label:hover{
+       cursor: pointer;
+       background: rgba(0,0,0,0.3);
+       }
+      
+  /*nav*/
  
+     .menu ul{
+        margin:0;
+        padding:0;
+        list-style: none;
+        display: flex;
 
-//*para pag contactos- abajo del header
+          li:hover{
+             background:rgba(0,0,0,05);}
+          
+          li{
+             text-align: center;
+             flex-grow: 1;
+
+               a{ display: block;
+                  padding: 15px 20px;
+                  color: white;
+                  text-decoration: none;
+                  }
+             }
+         }
+
+          
+@media (max-width:768px) {
+header label{
+    display: block;
+}
+
+.menu{
+    position: absolute;
+    background-color: #4E94ab;
+    width: 70%;     
+    margin-left: -75%;
+    transition: all 0.5s;  
+    z-index: 200;
+}
+
+.menu ul{
+    flex-direction: column;
+}
+
+.ul-galeria{
+    flex-direction: none;
+}
+
+.menu li{
+    border-top: 1px solid white;
+}
+
+#btn-menu:checked~ .menu{
+    margin: 0;
+}   
+}
+/*---menu desplegable*/
+
+
+
 .h1-contactos{
     font-size: 50px;
 }

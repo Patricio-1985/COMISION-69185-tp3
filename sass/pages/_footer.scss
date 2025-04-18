@@ -1,6 +1,19 @@
 /*  footer */
 @import "../utilidades/variables";
 
+@media (max-width:991px){
+    .footer-row{
+        text-align: center;
+    }
+    .footer-link {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+
+/*arriba foter novedades*/
+
 .footer{
     background-color: $bg-footer;
     padding: 80px 0;
